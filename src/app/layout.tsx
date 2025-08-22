@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Edu_NSW_ACT_Cursive } from "next/font/google";
+// import { Edu_NSW_ACT_Cursive } from "next/font/google";
 import "./globals.css";
 import ReactQueryProvider from "@/query_provider";
 
 
-const cursive = Edu_NSW_ACT_Cursive({
-  subsets: ["latin"],
-  variable: "--font-cursive"
-});
+// const cursive = Edu_NSW_ACT_Cursive({
+//   subsets: ["latin"],
+//   variable: "--font-cursive"
+// });
 
 export const metadata: Metadata = {
   title: "Coffkraft",
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${cursive.variable} antialiased`}
+        className={`antialiased`}
       >
         <ReactQueryProvider>
           {children}
@@ -31,3 +31,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+//${cursive.variable} 
