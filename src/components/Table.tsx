@@ -31,12 +31,12 @@ const Table = () => {
     },
   });
 
-  const handleDelete = (id?: string) => {
-    if (!id) return;
-    if (confirm("Are you sure you want to delete this entry?")) {
-      deleteMutation.mutate(id);
-    }
-  };
+//   const handleDelete = (id?: string) => {
+//     if (!id) return;
+//     if (confirm("Are you sure you want to delete this entry?")) {
+//       deleteMutation.mutate(id);
+//     }
+//   };
 
   const handleDeleteConfirm = () => {
     if (deleteEntry?.id) {

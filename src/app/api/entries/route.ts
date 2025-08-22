@@ -52,6 +52,10 @@ export async function PUT(req: Request) {
     const data: Entry = await req.json();
 
     // Update the entry based on ID
+    if (typeof data.id !== "number") {
+      return NextResponse.json({ error: "Valid id required" }, { status: 400 });
+    }
+
     const updated = await db
       .update(coffeeTable)
       .set({

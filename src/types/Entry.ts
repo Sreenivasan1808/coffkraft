@@ -1,5 +1,5 @@
 export interface Entry {
-  id: number;
+  id?: number;
   verificationid: string;
   department: string;
   quantity: number;

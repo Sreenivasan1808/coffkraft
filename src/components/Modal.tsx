@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import axios from "axios";
 
 type Entry = {
-  id?: string;
+  id?: number;
   verificationid: string;
   department: string;
   quantity: number;
