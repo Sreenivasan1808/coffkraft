@@ -10,7 +10,7 @@ import ReactQueryProvider from "@/query_provider";
 // });
 
 export const metadata: Metadata = {
-  title: "Coffkraft",
+  title: "Coffkrat",
   description: "Your only stopo for high quality coffee",
 };
 
